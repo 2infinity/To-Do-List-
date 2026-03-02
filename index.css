@@ -9,6 +9,11 @@ body{
  
 }
 
+h1{
+  color: black;
+  text-shadow: hotpink 5px 5px 5px;
+}
+
 #list{
   border: none;
   border-radius: 20px;
@@ -48,6 +53,9 @@ button{
 span{
   font-size: 25px;
   font-weight: bolder;
+  color: white;
+  border-radius: 20px;
+  text-shadow: black 2px 2px 2px;
   margin: 0px 0px 0px 0px;
   width: 300px;
 }
