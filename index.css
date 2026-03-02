@@ -10,12 +10,14 @@ body{
 }
 
 #list{
-  border: 2px solid black;
+  border: none;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 10px 0px 10px 0px;
+  box-shadow: lightpink 1px 1px 5px 5px;
+  width: 100%;
 }
 
 .open{
@@ -50,8 +52,8 @@ span{
 }
 #checkers{
   margin: 15px 0px 0px 0px;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 #container{
   overflow-y: scroll;
