@@ -14,10 +14,10 @@ body{
   border-radius: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   margin: 10px 0px 10px 0px;
   box-shadow: lightpink 1px 1px 5px 5px;
-  width: 100%;
+ 
 }
 
 .open{
@@ -35,23 +35,24 @@ body{
 }
 button{
   text-align: center;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 50px;
   font-size: 15px;
   font-weight: bolder;
   color: black;
   background-color: hotpink;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;
 }
 
 span{
   font-size: 25px;
   font-weight: bolder;
-  margin: 7px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;
+  width: 300px;
 }
 #checkers{
-  margin: 15px 0px 0px 0px;
+  margin: 7px 0px 0px 0px;
   width: 20px;
   height: 20px;
 }
@@ -59,4 +60,9 @@ span{
   overflow-y: scroll;
   max-height: 500px;
   box-shadow: pink 2px 2px 10px 10px;
+}
+
+#addBtn{
+  width: 45px;
+  height: 45px;
 }
