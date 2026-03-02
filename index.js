@@ -2,6 +2,8 @@ const container = document.getElementById("container");
 const addBtn = document.getElementById("addBtn");
 const note = document.getElementById("note");
 
+addBtn.addEventListener("click", addNote);
+
 note.addEventListener("keydown", (e)=>{
   if(e.key==="Enter"){
     addNote();
@@ -24,12 +26,14 @@ function render(){
     
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    checkbox.id = "checkers";
     checkbox.addEventListener("click", ()=>{
       todo.completed = checkbox.checked;
+     
       saveAndRender();
     });
     
-    let li = document.createElement("li");
+    let li = document.createElement("span");
     li.textContent = todo.text;
     li.classList.toggle("open", todo.completed);
     checkbox.checked = todo.completed;
@@ -56,7 +60,7 @@ function saveAndRender(){
 
 function addNote(){
   let notes = note.value.trim();
-  if(notes===null){
+  if(notes===""){
     return;
   }
   noteArray.push({

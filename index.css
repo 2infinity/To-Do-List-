@@ -1,15 +1,60 @@
+
+
+
 body{
   background-color: black;
-  color: cyan;
+  color: var(--twilight-text-primary);
   text-align: center;
+  background-image: url("Images/background-Images/phone/IMG_3025.png");
+ 
 }
 
 #list{
+  border: 2px solid black;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 10px 0px 10px 0px;
 }
 
 .open{
   text-decoration: line-through;
+}
+#app-background{
+  display: inline-block;
+ width: 350px;
+ backdrop-filter: blur(2px);
+ box-shadow: hotpink 2px 2px 14px 14px;
+}
+#note{
+  font-size: 16px;
+  
+}
+button{
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: black;
+  background-color: hotpink;
+  margin: 0px 0px 0px 10px;
+}
+
+span{
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 7px 0px 0px 10px;
+}
+#checkers{
+  margin: 15px 0px 0px 0px;
+  width: 15px;
+  height: 15px;
+}
+#container{
+  overflow-y: scroll;
+  max-height: 500px;
+  box-shadow: pink 2px 2px 10px 10px;
 }
